@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "97312900565",
+    "firebase_url": "https://meet-scheduler-50099.firebaseio.com",
+    "project_id": "meet-scheduler-50099",
+    "storage_bucket": "meet-scheduler-50099.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:97312900565:android:cd45cfb271226f531ce95c",
+        "android_client_info": {
+          "package_name": "com.example.meet_scheduler"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "97312900565-29fff9t0jj22c9qomunhfbickmc3befr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjmlqllXqIaMe4llLFjbSpfurTraDCvfQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "97312900565-29fff9t0jj22c9qomunhfbickmc3befr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
