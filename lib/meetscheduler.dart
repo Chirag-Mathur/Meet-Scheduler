@@ -37,7 +37,7 @@ class _MeetSchedulerState extends State<MeetScheduler> {
     '490': 'https://meet.google.com/yaf-untz-smm?pli=1&authuser=1',
     '41015': 'https://meet.google.com/rwy-cafc-zus?pli=1&authuser=1',
     '41115': 'https://meet.google.com/yaf-untz-smm?pli=1&authuser=1',
-    '41330': 'https://meet.google.com/duz-vzzh-rso?pli=1&authuser=1',
+    '41330': 'https://meet.google.com/naj-hdto-vfj?authuser=1',
     '41430': 'https://classroom.google.com/u/1/c/MTE4NjI4NTQ5NjUw',
     '41530': 'https://classroom.google.com/u/1/c/MTE4NjI4NTQ5NjUw',
     '580': 'https://meet.google.com/jnr-zmjz-uko?pli=1&authuser=1',
@@ -184,7 +184,7 @@ class _MeetSchedulerState extends State<MeetScheduler> {
     '590': 'https://meet.google.com/jnr-zmjz-uko?pli=1&authuser=1',
     '51015': 'https://meet.google.com/edt-kaag-azn?pli=1&authuser=1',
     '51115': 'https://meet.google.com/yaf-untz-smm?pli=1&authuser=1',
-    '51330': 'https://meet.google.com/duz-vzzh-rso?pli=1&authuser=1',
+    '51330': 'https://meet.google.com/naj-hdto-vfj?authuser=1',
     '51430': 'https://classroom.google.com/u/1/c/MTE4NjI4NTQ5NjUw',
     '51530': 'https://classroom.google.com/u/1/c/MTE4NjI4NTQ5NjUw',
   };
