@@ -21,6 +21,9 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         title: Text('Meet Scheduler'),
       ),
+      drawer: Drawer(
+        
+      ),
       body: MeetScheduler(),
     );
   }
