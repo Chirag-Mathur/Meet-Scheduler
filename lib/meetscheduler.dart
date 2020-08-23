@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/services.dart';
 import 'dart:convert';
+import 'dart:async';
 
 class MeetScheduler extends StatefulWidget {
   @override
@@ -9,6 +10,21 @@ class MeetScheduler extends StatefulWidget {
 }
 
 class _MeetSchedulerState extends State<MeetScheduler> {
+  Timer timer;
+
+  @override
+  void initState() {
+    super.initState();
+    timer = Timer.periodic(
+        Duration(seconds: 15), (Timer t) => getCurrentDate());
+  }
+
+  @override
+  void dispose() {
+    timer?.cancel();
+    super.dispose();
+  }
+
   String finalDate = '';
   String finalDate2 = '';
   var _classlink = {
@@ -37,7 +53,7 @@ class _MeetSchedulerState extends State<MeetScheduler> {
     '490': 'https://meet.google.com/yaf-untz-smm?pli=1&authuser=1',
     '41015': 'https://meet.google.com/rwy-cafc-zus?pli=1&authuser=1',
     '41115': 'https://meet.google.com/yaf-untz-smm?pli=1&authuser=1',
-    '41330': 'https://meet.google.com/naj-hdto-vfj?authuser=1',
+    '41330': 'https://meet.google.com/kfd-znxz-wkk?authuser=1',
     '41430': 'https://classroom.google.com/u/1/c/MTE4NjI4NTQ5NjUw',
     '41530': 'https://classroom.google.com/u/1/c/MTE4NjI4NTQ5NjUw',
     '580': 'https://meet.google.com/jnr-zmjz-uko?pli=1&authuser=1',
@@ -119,6 +135,9 @@ class _MeetSchedulerState extends State<MeetScheduler> {
     } else if (h <= 15 || h == 16 && min <= 30) {
       h = 15;
       min = 30;
+    } else {
+      h = 16;
+      min = 30;
     }
     var date = new DateTime(week, h, min).toString();
 
@@ -184,7 +203,7 @@ class _MeetSchedulerState extends State<MeetScheduler> {
     '590': 'https://meet.google.com/jnr-zmjz-uko?pli=1&authuser=1',
     '51015': 'https://meet.google.com/edt-kaag-azn?pli=1&authuser=1',
     '51115': 'https://meet.google.com/yaf-untz-smm?pli=1&authuser=1',
-    '51330': 'https://meet.google.com/naj-hdto-vfj?authuser=1',
+    '51330': 'https://meet.google.com/kfd-znxz-wkk?authuser=1',
     '51430': 'https://classroom.google.com/u/1/c/MTE4NjI4NTQ5NjUw',
     '51530': 'https://classroom.google.com/u/1/c/MTE4NjI4NTQ5NjUw',
   };
@@ -246,8 +265,7 @@ class _MeetSchedulerState extends State<MeetScheduler> {
     }
   }
 
-  @override
-  Widget build(BuildContext context) {
+  Widget home() {
     return Center(
       child: int.parse(getCurrentDate().substring(1)) <= 1430
           ? _classname[getCurrentDate()] == _classname2[getCurrentDate()]
@@ -269,7 +287,19 @@ class _MeetSchedulerState extends State<MeetScheduler> {
                     )
                   ],
                 ))
-          : Text('No more class today'),
+          : Text(getCurrentDate()),
     );
+  }
+
+  Widget startTimer() {
+    // Start the periodic timer which prints something every 1 seconds
+    Timer.periodic(new Duration(seconds: 1), (time) {
+      return home();
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return home();
   }
 }
