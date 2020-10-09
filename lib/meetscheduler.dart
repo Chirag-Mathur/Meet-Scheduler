@@ -15,8 +15,8 @@ class _MeetSchedulerState extends State<MeetScheduler> {
   @override
   void initState() {
     super.initState();
-    timer = Timer.periodic(
-        Duration(seconds: 15), (Timer t) => getCurrentDate());
+    timer =
+        Timer.periodic(Duration(seconds: 15), (Timer t) => getCurrentDate());
   }
 
   @override
@@ -46,9 +46,9 @@ class _MeetSchedulerState extends State<MeetScheduler> {
     '390': 'https://meet.google.com/jnr-zmjz-uko?pli=1&authuser=1',
     '31015': 'https://meet.google.com/edt-kaag-azn?pli=1&authuser=1',
     '31115': 'https://meet.google.com/edt-kaag-azn?pli=1&authuser=1',
-    '31330': 'https://meet.google.com/imc-ywre-mnx?pli=1&authuser=1',
-    '31430': 'https://meet.google.com/imc-ywre-mnx?pli=1&authuser=1',
-    '31530': 'https://meet.google.com/rwy-cafc-zus?pli=1&authuser=1',
+    '31330': 'https://meet.google.com/gvj-advk-qrn?pli=1&authuser=1',
+    '31430': 'https://meet.google.com/gvj-advk-qrn?pli=1&authuser=1',
+    '31530': 'https://meet.google.com/gvj-advk-qrn?pli=1&authuser=1  ',
     '480': 'https://meet.google.com/nxy-ydba-kzr?pli=1&authuser=1',
     '490': 'https://meet.google.com/yaf-untz-smm?pli=1&authuser=1',
     '41015': 'https://meet.google.com/rwy-cafc-zus?pli=1&authuser=1',
@@ -66,27 +66,27 @@ class _MeetSchedulerState extends State<MeetScheduler> {
   };
 
   var _classname = {
-    '180': 'EC 201 (KKJ ki Class)',
+    '180': 'EC 201 ',
     '190': 'MA201',
     '11015': 'CS203(Algo Class)',
-    '11115': 'Amandeep ke Class hai',
-    '11330': 'CS261(OOPS Lab)(A & C)',
+    '11115': 'Technical Writing',
+    '11330': 'CS261(A & C)',
     '11430': 'CS261(OOPS Lab)(A & C)',
     '11530': 'CS261(OOPS Lab)(A & C)',
     '280': 'CS201(OOPS Class)',
     '290': 'EVS(Section 1)',
-    '21015': 'NO Class for Section 1',
-    '21115': 'EC 201 (KKJ ki Class)',
-    '21330': 'CS263(Algo Lab)(A & C)',
+    '21015': 'NO Class S1',
+    '21115': 'EC 201',
+    '21330': 'CS263(A & C)',
     '21430': 'CS263(Algo Lab)(A & C)',
     '21530': 'CS263(Algo Lab)(A & C)',
     '380': 'MA201',
     '390': 'CS203(Algo Class)',
-    '31015': 'CS201(OOPS Class)(DSS)',
+    '31015': 'CS201(DSS)',
     '31115': 'CS201(OOPS Class)',
-    '31330': 'EC261(KKJ ki Lab)(Section 1)',
-    '31430': 'EC261(KKJ ki Lab)(Section 1)',
-    '31530': 'EC201(KKJ ki Doubt Class)(Section 1)',
+    '31330': 'EC261(KKJ ki Lab)',
+    '31430': 'EC261(KKJ ki Lab)',
+    '31530': 'EC201(KKJ ki Doubt Class)',
     '480': 'EVS(Section 1)',
     '490': 'MA201 Tut',
     '41015': 'EC 201 (KKJ ki Class)',
@@ -95,12 +95,12 @@ class _MeetSchedulerState extends State<MeetScheduler> {
     '41430': 'HS201 Lab(Section 1)',
     '41530': 'HS201 Lab(Section 1)',
     '580': 'CS203(Algo Class)',
-    '590': 'CS203(Algo Class)(DSS)',
+    '590': 'CS203(DSS)',
     '51015': 'CS201(OOPS Class)',
     '51115': 'MA 201(DSS)',
-    '51330': 'EE160(DKS ki Lab)(Section 1)',
-    '51430': 'EE160(DKS ki Lab)(Section 1)',
-    '51530': 'EE160(DKS ki Lab)(Section 1)',
+    '51330': 'EE160(Section 1)',
+    '51430': 'EE160(Section 1)',
+    '51530': 'EE160(Section 1)',
   };
 
   // var _titlename = {'801': 'Section 1', '802': 'Section 2', ''};
@@ -189,9 +189,9 @@ class _MeetSchedulerState extends State<MeetScheduler> {
     '390': 'https://meet.google.com/jnr-zmjz-uko?pli=1&authuser=1',
     '31015': 'https://meet.google.com/edt-kaag-azn?pli=1&authuser=1',
     '31115': 'https://meet.google.com/edt-kaag-azn?pli=1&authuser=1',
-    '31330': 'https://meet.google.com/imc-ywre-mnx?pli=1&authuser=1',
-    '31430': 'https://meet.google.com/imc-ywre-mnx?pli=1&authuser=1',
-    '31530': 'https://meet.google.com/rwy-cafc-zus?pli=1&authuser=1',
+    '31330': 'https://meet.google.com/gvj-advk-qrn?pli=1&authuser=1',
+    '31430': 'https://meet.google.com/gvj-advk-qrn?pli=1&authuser=1',
+    '31530': 'https://meet.google.com/gvj-advk-qrn?pli=1&authuser=1',
     '480': 'https://meet.google.com/yaf-untz-smm?pli=1&authuser=1',
     '490': 'https://meet.google.com/gov-hpkt-xgq?pli=1&authuser=1',
     '41015': 'https://meet.google.com/rwy-cafc-zus?pli=1&authuser=1',
@@ -209,36 +209,36 @@ class _MeetSchedulerState extends State<MeetScheduler> {
   };
 
   var _classname2 = {
-    '180': 'EC 201 (KKJ ki Class)',
+    '180': 'EC 201',
     '190': 'MA201',
     '11015': 'CS203(Algo Class)',
-    '11115': 'Amandeep ke Class hai',
-    '11330': 'CS261(OOPS Lab)(B & D)',
+    '11115': 'Technical Writing',
+    '11330': 'CS261(B & D)',
     '11430': 'CS261(OOPS Lab)(B & D)',
     '11530': 'CS261(OOPS Lab)(B & D)',
     '280': 'CS201(OOPS Class)',
-    '290': 'NO Class for Section 2',
+    '290': 'NO Class - S2',
     '21015': 'EVS(Section 2)',
-    '21115': 'EC 201 (KKJ ki Class)',
-    '21330': 'CS263(Algo Lab)(B & D)',
+    '21115': 'EC 201',
+    '21330': 'CS263(B & D)',
     '21430': 'CS263(Algo Lab)(B & D)',
     '21530': 'CS263(Algo Lab)(B & D)',
     '380': 'MA201',
     '390': 'CS203(Algo Class)',
-    '31015': 'CS201(OOPS Class)(DSS)',
+    '31015': 'CS201(DSS)',
     '31115': 'CS201(OOPS Class)',
-    '31330': 'EC261(KKJ ki Lab)(Section 2)',
-    '31430': 'EC261(KKJ ki Lab)(Section 2)',
-    '31530': 'EC201(KKJ ki Doubt Class)(Section 2)',
+    '31330': 'EC261(KKJ ki Lab)',
+    '31430': 'EC261(KKJ ki Lab)',
+    '31530': 'EC201(KKJ ki Doubt Class)',
     '480': 'MA201 Tut',
     '490': 'EVS(Section 2)',
-    '41015': 'EC 201 (KKJ ki Class)',
+    '41015': 'EC 201 ',
     '41115': 'MA201',
-    '41330': 'EE160(DKS ki Lab)(Section 2)',
-    '41430': 'EE160(DKS ki Lab)(Section 2)',
-    '41530': 'EE160(DKS ki Lab)(Section 2)',
+    '41330': 'EE160(Section 2)',
+    '41430': 'EE160(Section 2)',
+    '41530': 'EE160(Section 2)',
     '580': 'CS203(Algo Class)',
-    '590': 'CS203(Algo Class)(DSS)',
+    '590': 'CS203(DSS)',
     '51015': 'CS201(OOPS Class)',
     '51115': 'MA 201(DSS)',
     '51330': 'HS201 Tut(Section 2)',
@@ -265,29 +265,274 @@ class _MeetSchedulerState extends State<MeetScheduler> {
     }
   }
 
+  _launchURLba1() async {
+    idd = "${DateTime.now().weekday.toString()}80";
+    setState(() {
+      url2 = _classlink[idd];
+    });
+
+    //print(_classlink[finalDate]);
+    //print(idd);
+    if (await canLaunch(url2)) {
+      await launch(url2);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  _launchURLba2() async {
+    idd = "${DateTime.now().weekday.toString()}90";
+    setState(() {
+      url2 = _classlink[idd];
+    });
+
+    //print(_classlink[finalDate]);
+    //print(idd);
+    if (await canLaunch(url2)) {
+      await launch(url2);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  _launchURLba3() async {
+    idd = "${DateTime.now().weekday.toString()}1015";
+    setState(() {
+      url2 = _classlink[idd];
+    });
+
+    //print(_classlink[finalDate]);
+    //print(idd);
+    if (await canLaunch(url2)) {
+      await launch(url2);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  _launchURLba4() async {
+    idd = "${DateTime.now().weekday.toString()}1115";
+    setState(() {
+      url2 = _classlink[idd];
+    });
+
+    //print(_classlink[finalDate]);
+    //print(idd);
+    if (await canLaunch(url2)) {
+      await launch(url2);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  _launchURLba5() async {
+    idd = "${DateTime.now().weekday.toString()}1330";
+    setState(() {
+      url2 = _classlink[idd];
+    });
+
+    //print(_classlink[finalDate]);
+    //print(idd);
+    if (await canLaunch(url2)) {
+      await launch(url2);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  _launchURLbb1() async {
+    idd = "${DateTime.now().weekday.toString()}80";
+    setState(() {
+      url2 = _classlink2[idd];
+    });
+
+    //print(_classlink[finalDate]);
+    //print(idd);
+    if (await canLaunch(url2)) {
+      await launch(url2);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  _launchURLbb2() async {
+    idd = "${DateTime.now().weekday.toString()}90";
+    setState(() {
+      url2 = _classlink2[idd];
+    });
+
+    //print(_classlink[finalDate]);
+    //print(idd);
+    if (await canLaunch(url2)) {
+      await launch(url2);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  _launchURLbb3() async {
+    idd = "${DateTime.now().weekday.toString()}1015";
+    setState(() {
+      url2 = _classlink2[idd];
+    });
+
+    //print(_classlink[finalDate]);
+    //print(idd);
+    if (await canLaunch(url2)) {
+      await launch(url2);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  _launchURLbb4() async {
+    idd = "${DateTime.now().weekday.toString()}1115";
+    setState(() {
+      url2 = _classlink2[idd];
+    });
+
+    //print(_classlink[finalDate]);
+    //print(idd);
+    if (await canLaunch(url2)) {
+      await launch(url2);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  _launchURLbb5() async {
+    idd = "${DateTime.now().weekday.toString()}1330";
+    setState(() {
+      url2 = _classlink2[idd];
+    });
+
+    //print(_classlink[finalDate]);
+    //print(idd);
+    if (await canLaunch(url2)) {
+      await launch(url2);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  void _showModalSheet() {
+    showModalBottomSheet(
+        context: context,
+        builder: (builder) {
+          return Container(
+            color: Color(0xFF008277),
+            child: Center(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: <Widget>[
+                      RaisedButton(
+                        onPressed: _launchURLba1,
+                        child: Text(_classname[
+                            "${DateTime.now().weekday.toString()}80"]),
+                      ),
+                      RaisedButton(
+                        onPressed: _launchURLba2,
+                        child: Text(_classname[
+                            "${DateTime.now().weekday.toString()}90"]),
+                      ),
+                      RaisedButton(
+                        onPressed: _launchURLba3,
+                        child: Text(_classname[
+                            "${DateTime.now().weekday.toString()}1015"]),
+                      ),
+                      RaisedButton(
+                        onPressed: _launchURLba4,
+                        child: Text(_classname[
+                            "${DateTime.now().weekday.toString()}1115"]),
+                      ),
+                      RaisedButton(
+                        onPressed: _launchURLba5,
+                        child: Text(_classname[
+                            "${DateTime.now().weekday.toString()}1330"]),
+                      ),
+                    ],
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: <Widget>[
+                      RaisedButton(
+                        onPressed: _launchURLbb1,
+                        child: Text(_classname2[
+                            "${DateTime.now().weekday.toString()}80"]),
+                      ),
+                      RaisedButton(
+                        onPressed: _launchURLbb2,
+                        child: Text(_classname2[
+                            "${DateTime.now().weekday.toString()}90"]),
+                      ),
+                      RaisedButton(
+                        onPressed: _launchURLbb3,
+                        child: Text(_classname2[
+                            "${DateTime.now().weekday.toString()}1015"]),
+                      ),
+                      RaisedButton(
+                        onPressed: _launchURLbb4,
+                        child: Text(_classname2[
+                            "${DateTime.now().weekday.toString()}1115"]),
+                      ),
+                      RaisedButton(
+                        onPressed: _launchURLbb5,
+                        child: Text(_classname2[
+                            "${DateTime.now().weekday.toString()}1330"]),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          );
+        });
+  }
+
   Widget home() {
-    return Center(
-      child: int.parse(getCurrentDate().substring(1)) <= 1430
-          ? _classname[getCurrentDate()] == _classname2[getCurrentDate()]
-              ? RaisedButton(
-                  onPressed: _launchURL,
-                  child: Text(_classname[getCurrentDate()]),
-                )
-              : Container(
-                  child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: <Widget>[
-                    RaisedButton(
-                      onPressed: _launchURL,
-                      child: Text(_classname[getCurrentDate()]),
-                    ),
-                    RaisedButton(
-                      onPressed: _launchURL2,
-                      child: Text(_classname2[getCurrentDate()]),
-                    )
-                  ],
-                ))
-          : Text(getCurrentDate()),
+    return Column(
+      //mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        Container(
+          child: Align(
+              alignment: Alignment.topRight,
+              child: FlatButton(
+                child: Text(
+                  "Class Links",
+                  style: TextStyle(color: Color(0xFF008277)),
+                ),
+                onPressed: _showModalSheet,
+              )),
+        ),
+        Expanded(
+          child: Center(
+            child: int.parse(getCurrentDate().substring(1)) <= 1430
+                ? _classname[getCurrentDate()] == _classname2[getCurrentDate()]
+                    ? RaisedButton(
+                        onPressed: _launchURL,
+                        child: Text(_classname[getCurrentDate()]),
+                      )
+                    : Container(
+                        child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: <Widget>[
+                          RaisedButton(
+                            onPressed: _launchURL,
+                            child: Text(_classname[getCurrentDate()]),
+                          ),
+                          RaisedButton(
+                            onPressed: _launchURL2,
+                            child: Text(_classname2[getCurrentDate()]),
+                          )
+                        ],
+                      ))
+                : Text("No more classes today"),
+          ),
+        ),
+      ],
     );
   }
 

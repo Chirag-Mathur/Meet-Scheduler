@@ -9,6 +9,7 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: "Meet Scheduler",
       debugShowCheckedModeBanner: false,
       home: Home(),
       routes: {
@@ -24,22 +25,25 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Color(0xFF08BCA6),
         title: Text('Meet Scheduler'),
       ),
       drawer: Drawer(
-        child: ListView(children: <Widget>[
-          ListTile(
-            title: Text('Timetable'),
-            onTap: () {
-              Navigator.of(context).popAndPushNamed('timetable');
-            },
-          ),
-          ListTile(
-            title: Text('Close'),
-            trailing: Icon(Icons.close),
-            onTap: () => Navigator.of(context).pop(),
-          )
-        ]),
+        child: Column(
+          children: <Widget>[
+            ListTile(
+              title: Text('Timetable'),
+              onTap: () {
+                Navigator.of(context).popAndPushNamed('timetable');
+              },
+            ),
+            ListTile(
+              title: Text('Close'),
+              trailing: Icon(Icons.close),
+              onTap: () => Navigator.of(context).pop(),
+            )
+          ],
+        ),
       ),
       body: MeetScheduler(),
     );
